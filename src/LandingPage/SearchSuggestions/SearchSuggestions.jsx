@@ -1,12 +1,29 @@
 import React from "react";
+import styles from './SearchSuggestions.module.css'
 
 export default function SearchSuggestions() {
   return (
-    <div>
-      <span className="icon is-flex">
-        <i className="fas fa-search"></i>
+    <div className="is-flex is-justify-content-center mt-3">
+      <span className=" icon">
+        <i className="fas fa-bath"></i>
       </span>
-      <span>Restaurants</span>
+      <span className={styles.suggestion}>Plumbers</span>
+      <span className=" icon">
+        <i className="fas fa-utensils"></i>
+      </span>
+      <span className={styles.suggestion}>Restaurants</span>
+      <span className=" icon">
+        <i className="fas fa-home"></i>
+      </span>
+      <span className={styles.suggestion}>Home Services</span>
+      <span className=" icon">
+        <i className="fas fa-motorcycle"></i>
+      </span>
+      <span className={styles.suggestion}>Delivery</span>
+      <span className=" icon">
+        <i className="fas fa-warehouse"></i>
+      </span>
+      <span className={styles.suggestion}>Black Owned</span>
     </div>
   );
 }
