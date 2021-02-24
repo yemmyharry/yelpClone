@@ -3,6 +3,7 @@ import TopNav from './TopNav/TopNav'
 import logo from '../assets/yelp.png'
 import styles from '../LandingPage/LandingPage.module.css'
 import SearchBar from '../SearchBar/SearchBar'
+import SearchSuggestions from './SearchSuggestions/SearchSuggestions'
 
 function LandingPage() {
     return (
@@ -12,6 +13,7 @@ function LandingPage() {
                <img src={logo} alt="yelp-logo" className={styles.logo}/> 
             </span>
             <SearchBar />
+            <SearchSuggestions />
             
 
         </div>

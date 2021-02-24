@@ -31,7 +31,7 @@ export default function SearchBar() {
         </p>
         <p className="control">
           <button className={`button is-medium ${styles['search-button']}`}>
-            <span className="icon">
+            <span className={`icon ${styles['search-icon']}`}>
               <i className="fas fa-search"></i>
             </span>
           </button>
