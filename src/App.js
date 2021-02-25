@@ -1,7 +1,7 @@
 import React from 'react'
 import LandingPage from "./LandingPage/LandingPage";
 import {Route, Switch } from 'react-router-dom'
-import SearchResults from './LandingPage/SearchResults/SearchResults'
+import SearchResults from './SearchResults/SearchResults'
 
 
 function App() {

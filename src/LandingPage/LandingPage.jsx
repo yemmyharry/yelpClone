@@ -2,7 +2,7 @@ import React from "react";
 import TopNav from "./TopNav/TopNav";
 import logo from "../assets/yelp.png";
 import styles from "../LandingPage/LandingPage.module.css";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "./SearchBar/SearchBar";
 import SearchSuggestions from "./SearchSuggestions/SearchSuggestions";
 
 function LandingPage() {
