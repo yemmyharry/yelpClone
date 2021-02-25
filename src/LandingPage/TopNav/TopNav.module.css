@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     margin: var(--element-spacing);
+    width: 100%;
+    color: azure
 }
 
 .left > * {
@@ -16,8 +18,19 @@
 .right{
     display: flex;
     align-items: center;
+    /* margin: 5px */
 }
 
 .right > * {
     margin-left: var(--element-spacing);
 }
+
+.clicky{
+
+    color: azure;
+    
+}
+a:hover {
+    border-bottom: 5px solid white;
+    color: azure
+  }

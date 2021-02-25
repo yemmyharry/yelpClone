@@ -4,7 +4,7 @@ import styles from './SearchBar.module.css'
 export default function SearchBar() {
   return (
     <div>
-      <div className="field has-addons is-flex is-justify-content-center">
+      <div className="field has-addons">
         <p className="control">
           <a className="button is-static is-medium">
             <strong>Find</strong>
