@@ -5,11 +5,16 @@ import styles from './NavBar.module.css'
 
 export default function NavBar() {
     return (
-        <div className={styles['nav-bar']}>
+        <div className={`${styles['nav-bar']}`}>
+            <div className={`${styles.contain}`}>
             <img src={logo} alt="yelp-logo" className={styles.logo}></img>
             <SearchBar small changeNav />
+            <button id="asc" className={`button ${styles['nav-b4btn']}`}>For Businesses</button>
+            <button className={`button ${styles['nav-b4btn']}`}>Write a Review</button>
             <button className={`button ${styles['nav-button']}`}>Login</button>
             <button className={`button is-danger ${styles['nav-button']}`}>Register</button>
+            </div>
+            
         </div>
     )
 }
