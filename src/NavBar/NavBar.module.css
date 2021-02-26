@@ -1,12 +1,16 @@
 .nav-bar{
     display: flex;
-    background-color: #d32323;
-    padding: 1rem 0;
+    /* background-color: #d32323; */
+    background-color: whitesmoke;
+    padding: 3rem 0;
     align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid grey;
 }
 
 .logo{
-    width: 75px
+    width: 75px;
+    margin-right: 1rem;
 }
 
 :global(.button).nav-button{
