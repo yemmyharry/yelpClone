@@ -14,7 +14,7 @@
 
 .logo{
     width: 75px;
-    margin-right: 1rem;
+    margin-right: 3rem;
 }
 
 :global(.button).nav-button{
@@ -26,11 +26,21 @@
     
 }
 
-:global(.button)#asc:hover {background-color: rgba(232, 189, 18, 0.796);}
+:global(.button).asc:hover {background-color: rgba(232, 189, 18, 0.796);}
 
 
 .contain{
     display: flex;
+    justify-content:center;
     margin-top: 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.8rem;
+}
+
+
+
+
+.nav-barry{
+    
+    background-color: white;
+    border-bottom: 1px solid grey;
 }

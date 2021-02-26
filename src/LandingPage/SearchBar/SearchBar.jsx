@@ -6,7 +6,7 @@ export default function SearchBar(props) {
   if(props.changeNav){
     return (
       <div>
-      <div className="field has-addons">
+      <div className={`field has-addons ${styles.shadow}`}>
         <p className="control">
           <input
             className={`input ${smallSize}`}
