@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./SearchResultsSummary.module.css";
+import styles from "./SearchQueries.module.css";
 
-export default function SearchResultsSummary() {
+export default function SearchQueries() {
   return (
     <div className={styles.container}>
       <div className={styles["search-summary"]}>

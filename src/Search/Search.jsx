@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import SubNav from "../NavBar/SubNav/SubNav";
 import styles from "../NavBar/NavBar.module.css";
-import SearchResultsSummary from "./SearchResuktsSummary/SearchResultsSummary";
+import SearchQueries from "./SearchQuery/SearchQueries";
 
 export default function SearchResults() {
   return (
@@ -11,7 +11,7 @@ export default function SearchResults() {
         <NavBar />
         <SubNav />
       </div>
-      <SearchResultsSummary />
+      <SearchQueries />
     </div>
   );
 }

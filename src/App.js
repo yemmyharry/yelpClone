@@ -1,14 +1,14 @@
 import React from 'react'
 import LandingPage from "./LandingPage/LandingPage";
 import {Route, Switch } from 'react-router-dom'
-import SearchResults from './SearchResults/SearchResults'
+import Search from './Search/Search'
 
 
 function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/search" component={SearchResults} />
+        <Route path="/search" component={Search} />
         <Route path="/" component={LandingPage} />
       </Switch>
     </div>
