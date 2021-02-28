@@ -17,11 +17,11 @@ export default function SearchQueries() {
           </span>
           <span>Filters</span>
         </button>
-        <div class="buttons has-addons are-small">
-            <button class="button">$</button>
-            <button class="button">$$</button>
-            <button class="button">$$$</button>
-            <button class="button">$$$$</button>
+        <div className="buttons has-addons are-small">
+            <button className="button">$</button>
+            <button className="button">$$</button>
+            <button className="button">$$$</button>
+            <button className="button">$$$$</button>
           </div>
         <button className={`button is-small`}>
           <span className={`icon`}>
