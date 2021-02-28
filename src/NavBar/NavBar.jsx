@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/yelp.png'
 import SearchBar from '../LandingPage/SearchBar/SearchBar'
 import styles from './NavBar.module.css'
-import SubNav from './SubNav/SubNav'
+
 
 export default function NavBar() {
     return (
