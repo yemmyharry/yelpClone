@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./SearchQueries.module.css";
 
-export default function SearchQueries() {
+export default function SearchQueries(props) {
+ 
   return (
     <div className={styles.container}>
       <div className={styles["search-summary"]}>
+       
         <h1 className="subtitle">
-          <strong>Best Burgers in Germany</strong>
+          <strong>{props.term}  {props.location}</strong>
         </h1>
         <p>Showing 6 out of 797 results</p>
       </div>

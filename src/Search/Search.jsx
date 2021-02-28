@@ -4,15 +4,20 @@ import SubNav from "../NavBar/SubNav/SubNav";
 import styles from "../NavBar/NavBar.module.css";
 import SearchQueries from "./SearchQuery/SearchQueries";
 import SearchResults from "../Search/SearchResults/SearchResults"
+import { useLocation } from "react-router-dom"
 
 export default function Search() {
+  const location = useLocation()
+  const params = new URLSearchParams(location.search)
+  const term = params.get('find_desc')
+  const locationParam = params.get('find_loc')
   return (
     <div>
       <div className={styles["nav-barry"]}>
-        <NavBar />
+        <NavBar term={term} location={locationParam}/>
         <SubNav />
       </div>
-      <SearchQueries />
+      <SearchQueries term={term} location={locationParam}  />
       <SearchResults />
     </div>
   );

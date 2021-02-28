@@ -4,7 +4,7 @@ import SearchBar from "../LandingPage/SearchBar/SearchBar";
 import styles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 
-export default function NavBar() {
+export default function NavBar(props) {
   return (
     // <div className={`${styles['nav-bar']}`}>
     <div className={`${styles.contain}`}>
@@ -12,7 +12,7 @@ export default function NavBar() {
         <img src={logo} alt="yelp-logo" className={styles.logo} />
       </Link>
 
-      <SearchBar small changeNav />
+      <SearchBar small changeNav term={props.term} location={props.location}/>
       <button className={`button ${styles["nav-b4btn"]} ${styles["asc"]}`}>
         For Businesses
       </button>

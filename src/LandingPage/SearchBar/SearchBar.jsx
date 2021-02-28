@@ -23,6 +23,7 @@ export default function SearchBar(props) {
               className={`input ${smallSize}`}
               type="text"
               placeholder="plumbers, delivery, takeout..."
+              value={term}
             ></input>
           </p>
           <p className="control">
@@ -31,6 +32,7 @@ export default function SearchBar(props) {
               className={`input ${smallSize}`}
               type="text"
               placeholder="San Francisco, CA"
+              value={location}
             ></input>
           </p>
           <p className="control">
@@ -61,6 +63,7 @@ export default function SearchBar(props) {
               className={`input ${smallSize}`}
               type="text"
               placeholder="plumbers, delivery, takeout..."
+              value={term}
             ></input>
           </p>
           <p className="control">
@@ -74,6 +77,7 @@ export default function SearchBar(props) {
               className={`input ${smallSize}`}
               type="text"
               placeholder="San Francisco, CA"
+              value={location}
             ></input>
           </p>
           <p className="control">
