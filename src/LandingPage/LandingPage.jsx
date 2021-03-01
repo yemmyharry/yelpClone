@@ -4,13 +4,14 @@ import logo from "../assets/yelp.png";
 import styles from "../LandingPage/LandingPage.module.css";
 import SearchBar from "./SearchBar/SearchBar";
 import SearchSuggestions from "./SearchSuggestions/SearchSuggestions";
-// import useReactRouter from 'use-react-router';
 import { useHistory } from "react-router-dom";
+// import env from "react-dotenv";
 
 function LandingPage() {
   // const {history} = useReactRouter();
   const history = useHistory();
-
+  
+  console.log(window.env.API_KEY)
   function search(term, location){
       const urlEncodedTerm = encodeURI(term)
       const urlEncodedLocation = encodeURI(location)
