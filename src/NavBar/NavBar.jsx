@@ -12,7 +12,7 @@ export default function NavBar(props) {
         <img src={logo} alt="yelp-logo" className={styles.logo} />
       </Link>
 
-      <SearchBar small changeNav term={props.term} location={props.location}/>
+      <SearchBar small changeNav term={props.term} location={props.location} search={props.search} />
       <button className={`button ${styles["nav-b4btn"]} ${styles["asc"]}`}>
         For Businesses
       </button>

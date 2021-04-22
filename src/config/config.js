@@ -1,12 +1,17 @@
-import queryString from 'query-string';
+import queryString from "query-string";
 
-export function get(path, queryParams) {
-    const query = queryString.stringify(queryParams)
-    return fetch(`${window.env.APP_URL}${path}?${query}`, {
-        headers: {
-            Authorization: `Bearer ${window.env.API_KEY}`,
-            Origin: 'localhost',
-            withCredentials: true
-        }
-    })
+export async function get(path, queryParams) {
+  const query = queryString.stringify(queryParams);
+  return await fetch(`${path}?${query}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+  
+      "Accept": "*/*",
+
+      "Authorization": `Bearer ${window.env.API_KEY}`
+   },
+    withCredentials: true,
+    Origin: "localhost",
+  });
 }

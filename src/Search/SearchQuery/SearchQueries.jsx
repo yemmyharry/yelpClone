@@ -2,15 +2,24 @@ import React from "react";
 import styles from "./SearchQueries.module.css";
 
 export default function SearchQueries(props) {
- 
+  let resultStats = null;
+  if (props.amountResults && props.shownResults) {
+    resultStats = (
+      <p>
+        Showing 1-{props.shownResults} out of {props.amountResults} results
+      </p>
+    );
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles["search-summary"]}>
-       
         <h1 className="subtitle">
-          <strong>{props.term}  {props.location}</strong>
+          <strong>
+            {props.term} {props.location}
+          </strong>
         </h1>
-        <p>Showing 6 out of 797 results</p>
+        <p>{resultStats}</p>
       </div>
       <div className={styles.filters}>
         <button className={`button is-small`}>
@@ -20,11 +29,11 @@ export default function SearchQueries(props) {
           <span>Filters</span>
         </button>
         <div className="buttons has-addons are-small">
-            <button className="button">$</button>
-            <button className="button">$$</button>
-            <button className="button">$$$</button>
-            <button className="button">$$$$</button>
-          </div>
+          <button className="button">$</button>
+          <button className="button">$$</button>
+          <button className="button">$$$</button>
+          <button className="button">$$$$</button>
+        </div>
         <button className={`button is-small`}>
           <span className={`icon`}>
             <i className="fas fa-clock"></i>

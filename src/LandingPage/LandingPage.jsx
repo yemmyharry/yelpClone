@@ -11,7 +11,7 @@ function LandingPage() {
   // const {history} = useReactRouter();
   const history = useHistory();
   
-  console.log(window.env.API_KEY)
+  
   function search(term, location){
       const urlEncodedTerm = encodeURI(term)
       const urlEncodedLocation = encodeURI(location)

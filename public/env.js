@@ -1,4 +1,4 @@
 window.env = {
-  "API_URL": "https://api.yelp.com/v3/",
-  "API_KEY": "oRBtbyAjbXsn1gzcy4AVo0prRMjuBXFFeA6rW9IKBKpmODGjbnrNoEERgFgAdWggQbkTefVnxo0IRBx6HR-oAZtGG2R6rTabfo11InqvsxUzX_Uz7j208q1CwDI8YHYx"
+  "APP_URL": "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3",
+  "API_KEY": "tFjqWQGpsSTm1pAXLQ3i58tG2KzPw0yZf31dvfdwMSUcsa9sjNKe93DoMNSQ6FkhtItWD1jYTv4qwacB6tS1raWwzpk_J1SJ2njgRE5KtVS2TG9EL30jrbdrKls_YHYx"
 };
