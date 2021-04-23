@@ -3,20 +3,24 @@ import styles from "./SearchResult.module.css";
 import BusinessRating from '../../../BusinessRating/BusinessRating'
 
 export default function SearchResult(props) {
+  if(!props.business){
+    return null
+  }
 
+  const tags = props.business.categories.map(category=><span className={`tag ${styles['business-tag']}`} key={category.alias}>{category.title}</span>)
+  const addressLines = props.business.location.display_address.map(addressLine => <p key={props.business.id}>{addressLine}</p>)
 
   return (
     <div className={styles['search-result']}>
         <img src={props.business.image_url} alt="" className={styles['business-image']}/>
         <div className={styles['business-info']}>
             <h2 className="subtitle">{props.business.name}</h2>
-          <BusinessRating />
-        <p> $$$ <span className="tag">Burger</span> <span className="tag">Fries</span> </p>   
+          <BusinessRating reviewCount={props.business.review_count} rating={props.business.rating}  />
+        <p> {props.business.price} {tags} </p>   
         </div>
         <div className={styles['contact-info']}>
-            <p>+234575959404</p>
-            <p>Openheimer strret</p>
-            <p>12345 Berlin</p>
+            <p>{props.business.phone}</p>
+           <p>{addressLines}</p>
             
         </div>
        

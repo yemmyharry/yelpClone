@@ -15,7 +15,11 @@
 .business-info{
     min-width: 400px;
 }
-.contact-info p {
+.contact-info > p {
     font-size: .85rem;
-    margin:0 -90px;
+    margin:0 -110px;
+}
+
+:global(.tag).business-tag{
+    margin-right: 4px;
 }
