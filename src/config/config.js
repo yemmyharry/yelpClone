@@ -9,7 +9,7 @@ export async function get(path, queryParams) {
   
       "Accept": "*/*",
 
-      "Authorization": `Bearer ${window.env.API_KEY}`
+      "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`
    },
     withCredentials: true,
     Origin: "localhost",
