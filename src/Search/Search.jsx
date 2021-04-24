@@ -28,7 +28,7 @@ export default function Search() {
         <NavBar term={term} location={locationParam} search={search} />
         <SubNav />
       </div>
-      <SearchQueries term={term} location={locationParam} shownResults={businesses ? businesses.length : 0} amountResults={amountResults} />
+      <SearchQueries term={searchParams.term} location={searchParams.location} shownResults={businesses ? businesses.length : 0} amountResults={amountResults} />
       <SearchResults businesses={businesses}  />
     </div>
   );
