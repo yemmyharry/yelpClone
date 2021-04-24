@@ -15,9 +15,10 @@ export default function SearchQueries(props) {
     <div className={styles.container}>
       <div className={styles["search-summary"]}>
         <h1 className="subtitle">
-          <strong>
-            {props.term} {props.location}
-          </strong>
+          {props.term ? <strong>
+            Best {props.term} in {props.location}
+          </strong> : null}
+          
         </h1>
         <p>{resultStats}</p>
       </div>
